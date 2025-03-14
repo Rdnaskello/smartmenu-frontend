@@ -3,8 +3,8 @@ import axios from "axios";
 import { generateShoppingList } from "./ShoppingList";
 import "./MenuPlanning.css"; // Додаємо CSS для стилізації
 
-const API_MEALS = "http://127.0.0.1:8000/meals/";
-const API_MENU = "http://127.0.0.1:8000/menu/";
+const API_MEALS = `${process.env.REACT_APP_API_URL}/meals/`;
+const API_MENU = `${process.env.REACT_APP_API_URL}/menu/`;
 
 function MenuPlanning({ setShoppingList }) { 
   const [meals, setMeals] = useState([]);
