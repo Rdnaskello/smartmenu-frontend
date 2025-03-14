@@ -1,0 +1,85 @@
+.menu-planning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8dc;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  .menu-planning h2 {
+    color: #333;
+  }
+  
+  .menu-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #e8f5e9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  input, select {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .add-menu-btn {
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 90%;
+  }
+  
+  .add-menu-btn:hover {
+    background: #1b5e20;
+  }
+  
+  .menu-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .menu-item {
+    background: #fdf4dc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-info {
+    flex-grow: 1;
+  }
+  
+  .delete-btn {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    color: darkred;
+  }
+  

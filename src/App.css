@@ -1,38 +1,154 @@
+/* Загальний стиль для сайту */
+body {
+  font-family: 'Georgia', serif;
+  background-color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+/* Основна структура */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+}
+
+/* Заголовок */
+header {
+  width: 100%;
+  background-color: #efe8a0;
+  padding: 15px;
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #1e4d4d;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+nav a {
+  color: #0b4f4f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Основний контейнер */
+.container {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+/* Ліва панель - Додавання страв */
+.left-panel {
+  flex: 1;
+  background-color: #fdf9c7;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.left-panel h2 {
+  font-size: 1.5em;
+  color: #1e4d4d;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-container input,
+.input-container select {
+  width: 90%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 2px solid #b2d3b2;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 1em;
+}
+
+/* Права панель - Список страв */
+.right-panel {
+  flex: 2;
+  background-color: #2d8b8b;
+  padding: 20px;
+  border-radius: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.right-panel h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.meal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.meal-item {
+  background-color: #fdf9c7;
+  padding: 15px;
+  border-radius: 5px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meal-item button {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.meal-item button:hover {
+  color: red;
+}
+
+/* Кнопка */
+button {
+  background-color: #1e4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #163636;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .left-panel,
+  .right-panel {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
