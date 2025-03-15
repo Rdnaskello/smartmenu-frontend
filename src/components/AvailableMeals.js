@@ -3,6 +3,7 @@ import axios from "axios";
 import "./AvailableMeals.css"; // Додаємо CSS для стилізації
 
 // API для страв
+console.log("API URL:", process.env.REACT_APP_API_URL);
 const API_MEALS = process.env.REACT_APP_API_URL + "/meals";
 
 // Категорії страв
