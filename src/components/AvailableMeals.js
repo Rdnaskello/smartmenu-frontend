@@ -23,6 +23,7 @@ function AvailableMeals() {
 
   const fetchMeals = async () => {
     try {
+      console.log("API URL:", API_MEALS); // Додано для дебагу
       const response = await axios.get(API_MEALS);
       setMeals(response.data);
     } catch (error) {
