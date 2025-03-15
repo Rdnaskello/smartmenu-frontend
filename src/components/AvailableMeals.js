@@ -4,7 +4,7 @@ import "./AvailableMeals.css"; // Додаємо CSS для стилізації
 
 // API для страв
 console.log("API URL:", process.env.REACT_APP_API_URL);
-const API_MEALS = process.env.REACT_APP_API_URL + "/meals";
+const API_MEALS = process.env.REACT_APP_API_URL + "/meals/";
 
 // Категорії страв
 const mealCategories = [
@@ -23,7 +23,7 @@ function AvailableMeals() {
 
   const fetchMeals = async () => {
     try {
-      console.log("API URL:", API_MEALS); // Додано для дебагу
+      console.log("API URL MEALS:", API_MEALS); // Додано для дебагу
       const response = await axios.get(API_MEALS);
       setMeals(response.data);
     } catch (error) {
